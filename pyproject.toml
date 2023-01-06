@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "femty"
+version = "0.1.0"
+description = ""
+authors = ["Jelmar Gerritsen <jelmargerritsen@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9.0,<3.12"
+numpy = "^1.23.0"
+matplotlib = "^3.5.2"
+fenics-ufl = "^2022.1.0"
+scipy = "^1.9.1"
+sympy = "^1.11.1"
+seaborn = "^0.12.0"
+nbimporter = "^0.3.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = 'femty.tests:run_tests'
